@@ -1,0 +1,338 @@
+/*
+
+html
+  -> head
+    -> stylesheet
+    -> title (tab name etc)
+  -> body
+    -> header
+    -> main
+        -> h1 (Article Title)
+        -> main_body
+            -> [] text_block (<p>), image_block (<img>), code_block (<code>)
+        -> refs (Links and footnotes
+    -> footer
+*/
+
+
+html {
+	
+    scrollbar-width: thin;
+    background-color: rgb(30, 29, 31);
+    color: rgb(172, 169, 168);
+    font-family: Verdana, Geneva, sans-serif;
+    
+    font-size: 14px;
+    -ms-overflow-style: none;
+}
+
+head {}
+
+body {
+    position: relative;
+    /* background-color: #EEAAEE; */
+    margin-top: 70px;
+    margin-bottom:   0px;
+    margin-left:  0px;
+    margin-right: 0px;
+}
+
+hr {
+    clear: both;
+    width:98%;
+    margin:auto;
+    /* color:red; */
+    opacity:0.05;
+}
+
+.bar_background {
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    opacity: 0.3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: -1;
+    box-shadow: 0px 4px 4px #00000055;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 40px;
+    
+    /* background-color: #AA44EE; */
+    margin: auto auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    word-wrap: none;
+    color: #FFFFFF;
+    
+    text-align: center;
+    vertical-align: middle;
+    /* box-shadow: 0px 4px 4px #00000055; */
+    text-shadow: 1px 1px 2px #000000;
+    z-index: 10;
+}
+.shadow {
+    
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height:60px;
+    background-image: linear-gradient(#00000000, #00000066);
+    /* background-color: blue; */
+    width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+    .header { font-size: 3.35vw; }
+}
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    line-height: 40px;
+    /* background-color: #00000049; */
+    /* background-color: #AA44EE; */
+    margin: auto auto;
+    margin-top: 0px;
+    
+    font-size: 16px;
+    z-index: 10;
+    
+    text-align: center;
+    vertical-align: middle;
+    /* box-shadow: 0px -4px 4px #00000033; */
+    color: white;
+    opacity: 0.6;
+}
+
+
+
+.main {
+    /* padding: 10px; */
+    /* padding-top: 200px; */
+    /* background-color: #AA44EE; */
+    width: 40%;
+    /* background-color: #00000011; */
+    font-size: 0.8vw;
+    margin: auto auto;
+    /* margin-left:20px; */
+    /* margin-right:50px; */
+    /* padding-left: 16px; */
+    
+    /* padding-right: 4px; */
+    
+    
+    text-align: left;
+    border-radius: 4px;
+    margin-bottom: 60px;
+}
+@media screen and (max-width: 800px) {
+    .main { width: 100%; margin-right:500px;}
+}
+
+@media screen and (min-width: 800px) {
+    .main { min-width: 800px;}
+}
+
+@media screen and (min-width: 1000px) {
+    .main { max-width: 1000px; }
+}
+
+@media screen and (min-width: 2400px) {
+    .main { font-size: 24px; }
+}
+
+@media screen and (max-width: 1700px) {
+    .main { font-size: 13px; }
+}
+
+p {
+    /* margin-right:38px; */
+}
+
+
+
+
+h1 {
+    margin-top:400px;
+    /* margin-top: 10px; */
+    /* float: left; */
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    padding-top:15px;
+    /* padding-bottom: 5px; */
+    font-size: 4vw;
+    /* padding: 10px; */
+    /* padding-left: 2px; */
+    /* padding-bottom: 0px; */
+}
+
+@media screen and (min-width: 1800px) {
+    h1 { font-size: 42px; }
+}
+@media screen and (max-width: 600px) {
+    h1 { font-size: 21px; }
+}
+
+a:link {
+    text-decoration: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    color: inherit;
+    opacity: 0.7;
+}
+
+a:visited {
+    text-decoration: inherit;
+    font-family: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    /* color: green; */
+    color: gray;
+    /* opacity:0.2; */
+}
+
+a:active {
+    text-decoration: inherit;
+    font-family: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    color: inherit;
+    opacity: 0.1;
+}
+
+.main_body {
+    padding-top: 10px;
+    margin: 10px;
+    margin-top: 2px;
+    /* margin-right:30px; */
+}
+
+code {
+    text-align:left;
+}
+
+
+
+.codeblock {
+    
+    font-family: "Lucida Console", Monaco, monospace;
+    width: 98%;
+    left: -2px;
+    margin:auto;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #151515; /*Fallback color for websites that dont support transparency (Edge)*/
+    background-color: #00000033;
+    color: rgb(88, 209, 139);
+    font-size: 16px;
+    max-height: 800px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #AAAAAA22 transparent;
+    /* font-weight: 800; */
+}
+
+
+.info {
+    width: 97%;
+    /* display: block; */
+    margin:auto;
+    margin-bottom: 10px;
+    /* padding-bottom:30px; */
+    background-color: blueviolet;
+    /* border: black; */
+    /* border-bottom: 3px; */
+    /* border-bottom-color: black; */
+    /* text-align:right; */
+}
+
+.date {
+    width: 50%;
+    text-align: left;
+    float: left;
+    /* padding-left:1px; */
+    opacity: 0.3;
+}
+
+.author {
+    width: 50%;/* position: absolute; */
+    /* padding:0px; */
+    /* padding-right:5px; */
+    text-align: right;
+    /* margin-right:28px; */
+    float: right;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+body::-webkit-scrollbar {
+    width: 0px;
+    /* width: 20px; */
+    /* background: transparent; */
+}
+
+body::-webkit-scrollbar-track {
+    width: 0px;
+
+    
+    /* width: 20; */
+    /* change me to blue to match the background */
+}
+
+.codeblock::-webkit-scrollbar {
+    width: 16px;
+    top: 20px;
+}
+
+.codeblock::-webkit-scrollbar-thumb {
+    background: #FFFFFF11;
+    border-radius: 8px;
+    border: 4px #161616 solid;
+
+}
+.codeblock::-webkit-scrollbar-thumb:hover {
+    background: #FFFFFF44;
+    border-radius: 8px;
+    border: 4px #161616 solid;
+
+}
+.codeblock::-webkit-scrollbar-thumb:active {
+    background: #FFFFFF88;
+    border-radius: 8px;
+    border: 4px #161616 solid;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    /* background: #FFFFFF11; */
+    border-radius: 20px;
+    border: 1px rgb(30, 29, 31) solid;
+    z-index: 1;
+
+    
+}
