@@ -51,7 +51,7 @@ h2 {
 	font-family: spartan, sans-serif;
 	font-size: var(--article-group-name-font-size);
 	margin-left: 2%;
-	margin-right: 2%;
+	/* margin-right: 2%; */
 	color: var(--txt-color);
 }
 h3 {
@@ -59,7 +59,7 @@ h3 {
 	font-family: spartan, sans-serif;
 	font-size: var(--article-group-name-font-size);
 	margin-left: 2%;
-	margin-right: 2%;
+	/* margin-right: 2%; */
 	color: var(--txt-color);
 }
 h2:hover {
@@ -118,6 +118,36 @@ body {
 	margin-right: 1%;
 	color: var(--link-color);
 	font-size: var(--link-font-size);
+}
+
+.sections {
+	text-align:center;
+	width: 100%;
+	display: block;
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	 -khtml-user-select: none; /* Konqueror HTML */
+		-moz-user-select: none; /* Old versions of Firefox */
+		 -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+											supported by Chrome, Edge, Opera and Firefox */
+}
+.currentSection {
+	font-weight: 900;
+	margin-left: 40px;
+	margin-right: 40px;
+
+
+}
+.currentSection:hover {
+color: var(--link-color);
+}
+
+.sectionOption {
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .articleFooter {
