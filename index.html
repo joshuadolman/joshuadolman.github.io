@@ -1,145 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <div class="header">
-        <div class="bar_background" style="position:fixed;"></div>    
-        HEADER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTACT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOMETHING ELSE
-        
-    </div>    
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Tab Title</title>
-        
-    </head>
-    
-    <body>
-        <div class="main">
-            <h1>
-                    My Example HTML Generator
-            </h1>
-            <div class="info">
-                <p class="date">
-                        2020/01/18
-                </p>
-                <p class="author">
-                    Joshua Dolman
-                </p>
-                
-            </div>
-            <hr>
-            <div class="main_body">
-                Hello world there should be almost no breaks unless im starting a new paragraph in which case should i do a single br? or a double br? or perhaps even do new p? im not sure,lets give it a go now<br><br>
-    
-                That was a new paragraph. how does that feel? good? bad? meh? who knows, let us try br well hello there! fancy seeing you here! maybe that felt okay or maybe it wasnt strong enough! lets try again! double BR!<br><br>
-                phew, hopefully we all survived without too many injuries!<br><br>
-                Hello world there should be almost no breaks unless im starting a new paragraph in which case should i do a single br? or a double br? or perhaps even do new p? im not sure,lets give it a go now<br><br>
-    
-                That was a new paragraph. how does that feel? good? bad? meh? who knows, let us try br well hello there! fancy seeing you here! maybe that felt okay or maybe it wasnt strong enough! lets try again! double BR!<br><br>
-                phew, hopefully we all survived without too many injuries!<br><br>
-                Hello world there should be almost no breaks unless im starting a new paragraph in which case should i do a single br? or a double br? or perhaps even do new p? im not sure,lets give it a go now<br><br>
-    
-                That was a new paragraph. how does that feel? good? bad? meh? who knows, let us try br well hello there! fancy seeing you here! maybe that felt okay or maybe it wasnt strong enough! lets try again! double BR!<br><br>
-                phew, hopefully we all survived without too many injuries!<br><br>
-                Hello world there should be almost no breaks unless im starting a new paragraph in which case should i do a single br? or a double br? or perhaps even do new p? im not sure,lets give it a go now<br><br>
-    
-                That was a new paragraph. how does that feel? good? bad? meh? who knows, let us try br well hello there! fancy seeing you here! maybe that felt okay or maybe it wasnt strong enough! lets try again! double BR!<br><br>
-                phew, hopefully we all survived without too many injuries!<br><br>
-                Hello world there should be almost no breaks unless im starting a new paragraph in which case should i do a single br? or a double br? or perhaps even do new p? im not sure,lets give it a go now<br><br>
-                    <div class="codeblock">
-                        <code>
-            
-                            internal void<br>
-                            <span class="code_token_type">
-                        
-                            ParseDolIntoHTML</span>(FileBuffer* dolFile, FileBuffer* htmlFile, char* fileName) {<br>
-                            &nbsp;&nbsp;u64 offsetGain = 0;<br>
-                            <br>
-                            &nbsp;&nbsp;char* tempstr = "";<br>
-                            &nbsp;&nbsp;strcat(((char*)htmlFile->memory.pointer + htmlFile->usedSize), tempstr);<br>
-                            &nbsp;&nbsp;offsetGain+=strlen(tempstr);<br>
-                            <br>
-                            &nbsp;&nbsp;strcat(((char*)htmlFile->memory.pointer + htmlFile->usedSize), fileName);<br>
-                            &nbsp;&nbsp;offsetGain+=strlen(fileName);<br>
-                            <br>
-                            &nbsp;&nbsp;tempstr = "";<br>
-                            &nbsp;&nbsp;strcat(((char*)htmlFile->memory.pointer + htmlFile->usedSize), tempstr);<br>
-                            &nbsp;&nbsp;offsetGain+=strlen(tempstr);<br>
-                            <br>
-                            &nbsp;&nbsp;htmlFile->atOffset+=offsetGain;<br>
-                            &nbsp;&nbsp;htmlFile->usedSize+=offsetGain;<br>
-                            <br>
-                            &nbsp;&nbsp;while (dolFile->atOffset < dolFile->usedSize) {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;switch (*((char*)dolFile->memory.pointer + dolFile->atOffset)) {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case '\t' :<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char* tab = "&nbsp;&nbsp;";<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strcat(((char*)htmlFile->memory.pointer + htmlFile->atOffset), tab);<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;htmlFile->atOffset+=strlen(tab);<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;htmlFile->usedSize+=strlen(tab);<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;} break;<br>
-                            &nbsp;&nbsp;}<br>
-                            }<br>
-                            <br>
-                            void main() {<br>
-                                &nbsp;&nbsp;int bar = 5;<br>
-                                &nbsp;&nbsp;bar = foo(bar);<br>
-                                &nbsp;&nbsp;return;<br>
-                            }
-                        </code>
-                    </div>
-                    <div class="codeblock">
-                            <code>
-                                    int num_categories = 4;<br>
-                                    int category_height = ypad + 1.2 * body_font->character_height;<br>
-                                    float x0 = x;<br>
-                                    float y0 = y;<br>
-                                    float title_height = draw_title(x0, y0, title);<br>
-                                    float height = title_height + num_categories * category_height + ypad;<br>
-                                    my_height = height;<br>
-                                    y0 -= title_height;<br>
-                                     
-                                    {
-                                    &nbsp;&nbsp;&nbsp;&nbsp;y0 -= category_height;<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;char *string = "Auto Snap";<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;bool pressed = draw_big_text_button(x0, y0, my_width, category_height, string);<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;if (pressed) do_auto_snap(this);<br>
-                                    }<br>
-                                     
-                                    {<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;y0 -= category_height;<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;char *string = "Reset Orientation";<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;bool pressed = draw_big_text_button(x0, y0, my_width, category_height, string);<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;if (pressed) {<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;// ...<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                                    }<br>
-                                    // ...<br>
-                            </code>
-                        </div>
-                That was a new paragraph. how does that feel? good? bad? meh? who knows, let us try br well hello there! fancy seeing you here! maybe that felt okay or maybe it wasnt strong enough! lets try again! double BR!<br><br>
-                phew, hopefully we all survived without too many injuries!<br><br>
-                Hello world there should be almost no breaks unless im starting a new paragraph in which case should i do a single br? or a double br? or perhaps even do new p? im not sure,lets give it a go now<br><br>
-    
-                That was a new paragraph. how does that feel? good? bad? meh? who knows, let us try br well hello there! fancy seeing you here! maybe that felt okay or maybe it wasnt strong enough! lets try again! double BR!<br><br>
-                phew, hopefully we all survived without too many injuries!<br><br>
-                Hello world there should be almost no breaks unless im starting a new paragraph in which case should i do a single br? or a double br? or perhaps even do new p? im not sure,lets give it a go now<br><br>
-    
-                That was a new paragraph. how does that feel? good? bad? meh? who knows, let us try br well hello there! fancy seeing you here! maybe that felt okay or maybe it wasnt strong enough! lets try again! double BR!<br><br>
-                phew, hopefully we all survived without too many injuries!<br><br>
-                Hello world there should be almost no breaks unless im starting a new paragraph in which case should i do a single br? or a double br? or perhaps even do new p? im not sure,lets give it a go now<br><br>
-    
-                That was a new paragraph. how does that feel? good? bad? meh? who knows, let us try br well hello there! fancy seeing you here! maybe that felt okay or maybe it wasnt strong enough! lets try again! double BR!<br><br>
-                phew, hopefully we all survived without too many injuries!
-                <embed src="file.txt"> 
-            </div>
-            
-        </div>
-        <div class="shadow"></div>       
-        <div class="footer">
-                <span class="bar_background" style="bottom:0px;left:0px;position:relative;"></span>    
-                <a href="https://www.youtube.com">Youtube</a>&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com">Youtube</a>&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com">Youtube</a>&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com">Youtube</a>
-        </div>
-        
-        
-    </body>
-    
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Tab Title</title>
+
+</head>
+
+<body>
+	<h1><a href="index.html">Joshua Dolman</a></h1>
+
+	<div class="articleList">
+		<hr>
+		<div class="articleSubGroup">
+			<h2><a href="qpconv/qpconv.html">qpconv</a></h2>
+			<a class="articleLink" href="qpconv/qpconv.html">
+				03 - This is the most recent post.
+			</a><br><br><br>
+			<a class="articleLink" href="qpconv/qpconv.html">
+				00 - What is this project?
+			</a><br><br>
+			<a class="articleLink" href="qpconv/what-is-left-to-do.html">
+				01 - What is left to do before this is complete?
+			</a><br><br>
+			<a class="articleLink" href="qpconv/palette-duplicate-call-for-help.html">
+				02 - How do I handle converting to a palette that contains duplicates?
+			</a><br><br>
+
+
+		</div>
+		<hr>
+	</div>
+
+</body>
+
 </html>
