@@ -16,12 +16,12 @@
 
 @font-face {
 	font-family: 'spartan';
-	src: url('fonts/Spartan-Variable.ttf') format('truetype');
+	src: url('_fonts/Spartan-Variable.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'nunito-reg';
-	src: url('fonts/Nunito-Regular.ttf') format('truetype');
+	src: url('_fonts/Nunito-Regular.ttf') format('truetype');
 }
 
 html {

@@ -1,0 +1,6 @@
+qpconv - Quake Palette Converter
+
+QPCONV is my first <i>real</i> programming <b>project</b> that I want to take all the way to completion. It is a
+command-line utility for converting images into files that can be used in Quake 1 and 2. Part of the problem
+qpconv
+solves is palettizing the image to fit Quake's predefined 256 color palette.
